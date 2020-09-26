@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+#define ll long long
+int oct( ll int x);
+using namespace std;
+int main(){
+	ll int n;
+	cout<<"Enter a number: ";
+	cin>>n;
+	cout<<endl;
+	cout<<"The result is: ";
+	cout<<oct(n)<<endl;
+}
+int oct( ll int x){
+ll	int placevalue=0,facevalue,octnum=0;
+while(x!=0){
+
+		facevalue=x%8;
+		x=x/8;
+	
+		octnum=octnum+pow(10,placevalue)*facevalue;
+		placevalue++;
+	}}
